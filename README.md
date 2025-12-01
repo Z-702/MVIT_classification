@@ -4,7 +4,8 @@ Build the environment following [INSTALL.md](https://github.com/Z-702/MVIT_class
 1. For different datasets, you need to change line 164 and line 169 of ./mvit/dataset/tractoembedding.py
 2. For model setting, edit config set in ./config/MVOTv2_mri.yaml
 # Execute code as follows
-'''PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
+'''
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
 PYTHONPATH=$(pwd) \
 nohup python ./tools/main.py \
     --cfg configs/MVITv2_mri.yaml \
