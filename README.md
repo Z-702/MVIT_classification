@@ -20,9 +20,9 @@ nohup python ./tools/main.py \
     DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
 ```
-The csv file is supposed to be coded with three columns, SUB_ID, DX_GROUP and fold. The program supposed multi-fold evaluation, and I suggest to use five-fold cross evaluation. 
-DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure) 
-DATA_AUG_NUM is the utilized augumentation amount
+The csv file is supposed to be coded with three columns, SUB_ID, DX_GROUP and fold. The program supposed multi-fold evaluation, and I suggest to use five-fold cross evaluation.  
+DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure)  
+DATA_AUG_NUM is the utilized augumentation amount 
 # The data path should be named following this
 /data01/zixi/HCP_500_vtk/129634/tractoembedding/da-full/129634-trace1_CLR_sz640.nii.gz 
 1. /data01/zixi/HCP_500_vtk/129634/tractoembedding: root path 
