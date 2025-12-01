@@ -16,7 +16,7 @@ nohup python ./tools/main.py \
     DATA_NUM {num} \
     DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
-```s
+```
 DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure)
 DATA_AUG_NUM is the utilized augumentation amount
 # The 
