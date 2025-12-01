@@ -1,5 +1,8 @@
 # This code ues mvit for DGCNN based embedding classification 
 Build the environment following [INSTALL.md](https://github.com/Z-702/MVIT_classification/blob/main/INSTALL.md) 
+# Using DGCNN to generate embedding images
+Usng following pipeline, [embed.py](https://github.com/Z-702/MVIT_classification/blob/main/embed.py) to generate embedding images from dti inputs. 
+The used codes are shown in the folder, embed_tools. 
 # Multiple inputs such as FA, MD and density are used to train and evaluate the model
 1. For different datasets, you need to change line 164 and line 169 of ./mvit/dataset/tractoembedding.py
 2. For model setting, edit config set in ./config/MVOTv2_mri.yaml
@@ -17,6 +20,7 @@ nohup python ./tools/main.py \
     DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
 ```
+The csv file is supposed to be coded with three columns, SUB_ID, DX_GROUP and fold. The program supposed multi-fold evaluation, and I suggest to use five-fold cross evaluation. 
 DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure) 
 DATA_AUG_NUM is the utilized augumentation amount
 # The data path should be named following this
