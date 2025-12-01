@@ -1,4 +1,4 @@
-# This code ues mvit for DGCNN based embedding classification 
+# This code use mvit for DGCNN based embedding classification 
 Build the environment following [INSTALL.md](https://github.com/Z-702/MVIT_classification/blob/main/INSTALL.md) 
 # Using DGCNN to generate embedding images
 Usng following pipeline, [embed.py](https://github.com/Z-702/MVIT_classification/blob/main/embed.py) to generate embedding images from dti inputs.  
