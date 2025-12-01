@@ -1,7 +1,7 @@
 # This code ues mvit for DGCNN based embedding classification 
 Build the environment following [INSTALL.md](https://github.com/Z-702/MVIT_classification/blob/main/INSTALL.md) 
 # Using DGCNN to generate embedding images
-Usng following pipeline, [embed.py](https://github.com/Z-702/MVIT_classification/blob/main/embed.py) to generate embedding images from dti inputs. 
+Usng following pipeline, [embed.py](https://github.com/Z-702/MVIT_classification/blob/main/embed.py) to generate embedding images from dti inputs.  
 The used codes are shown in the folder, embed_tools. 
 # Multiple inputs such as FA, MD and density are used to train and evaluate the model
 1. For different datasets, you need to change line 164 and line 169 of ./mvit/dataset/tractoembedding.py
