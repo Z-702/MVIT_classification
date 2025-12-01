@@ -9,12 +9,15 @@ PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
 PYTHONPATH=$(pwd) \
 nohup python ./tools/main.py \
     --cfg configs/MVITv2_mri.yaml \
-    DATA.PATH_TO_DATA_DIR /data01/zixi/TractoFormer/TractoFormer-MVIT-main/new_500.csv \
+    DATA.PATH_TO_DATA_DIR fold.csv \
     NUM_GPUS 2 \
     TRAIN.BATCH_SIZE 10 \
-    OUTPUT_DIR /data01/zixi/TractoFormer/TractoFormer-MVIT-main/output_new500_v2 \
-    DATA_NUM 3 \
-    DATA_AUG_NUM 1 \
+    OUTPUT_DIR path\to\your\model \
+    DATA_NUM {num} \
+    DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
+DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure)
+DATA_AUG_NUM is the utilized augumentation amount
+# The 
 
 
