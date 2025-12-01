@@ -17,8 +17,14 @@ nohup python ./tools/main.py \
     DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
 ```
-DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure)
+DATA_NUM is the utilized embedding locations (1 for left, 2 for left and righ, 3 for left, right and commisure) 
 DATA_AUG_NUM is the utilized augumentation amount
-# The 
+# The data path should be named following this
+/data01/zixi/HCP_500_vtk/129634/tractoembedding/da-full/129634-trace1_CLR_sz640.nii.gz 
+1. /data01/zixi/HCP_500_vtk/129634/tractoembedding: root path 
+2. /129634: subject id
+3. /da-full: augumentation index
+4. trace1: modility
+5. sz640: resolution(default utilizing three resolution:['sz80', 'sz160', 'sz320'], can be changed on line 64 of ./mvit/dataset/tractpembedding.py
 
 
