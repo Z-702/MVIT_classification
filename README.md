@@ -6,6 +6,12 @@ The used codes are shown in the folder, embed_tools.
 # Multiple inputs such as FA, MD and density are used to train and evaluate the model
 1. For different datasets, you need to change line 164 and line 169 of ./mvit/dataset/tractoembedding.py
 2. For model setting, edit config set in ./config/MVOTv2_mri.yaml
+# Edit the modility you use
+1. Change line 146 of ./mvit/dataset/tractoembedding.py,
+```bash
+for mode in ['FA1','density','trace1']:
+```
+2. Change parapmeter IN_CHANS in ./config/MVOTv2_mri.yaml to determine the number of modility 
 # Execute code as follows
 ```bash
 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
