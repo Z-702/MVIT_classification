@@ -4,7 +4,7 @@ Build the environment following [INSTALL.md](https://github.com/Z-702/MVIT_class
 Usng following pipeline, [embed.py](https://github.com/Z-702/MVIT_classification/blob/main/embed.py) to generate embedding images from DTI inputs.  
 The used codes are shown in the folder, embed_tools.  
 Some of the codes originated from the DeepWMA folder; they could be found on each server. Thus, I think there is no need to put them here. 
-# Multiple inputs such as FA, MD and density are used to train and evaluate the model
+# Multiple inputs such as FA, MD and Density are used to train and evaluate the model
 1. For different datasets, you need to change line 164 and line 169 of ./mvit/dataset/tractoembedding.py
 2. For model setting, edit config set in ./config/MVOTv2_mri.yaml
 # Edit the modility you use
