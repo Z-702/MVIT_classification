@@ -27,7 +27,7 @@ nohup python ./tools/main.py \
     DATA_AUG_NUM {N} \
     > output_new500_v2.log 2>&1 &
 ```
-The csv file is supposed to be coded with three columns, ** SUB_ID **, DX_GROUP and fold. The program is supposed multi-fold evaluation, and I suggest to use five-fold cross evaluation.  
+The csv file is supposed to be coded with three columns, ***SUB_ID***, ***DX_GROUP*** and ***fold***. The program is supposed multi-fold evaluation, and I suggest to use five-fold cross evaluation.  
 DATA_NUM is the utilized embedding locations (1 for left, 2 for left and right, 3 for left, right and commisure)  
 DATA_AUG_NUM is the utilized augumentation amount 
 # The data path should be named following this
